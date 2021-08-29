@@ -516,7 +516,7 @@ image:
 **Post author example:**
 
 ```yaml
-# post specific author data if different from what is set in _config.yml
+# post specific author data if different from what is set in _config.yml.bak
 author:
   name: John Doe
   picture: /images/john-doe.jpg
