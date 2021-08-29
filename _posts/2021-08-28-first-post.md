@@ -1,5 +1,5 @@
 ---
-title: "드디어 첫 블로그를 만들다"
+title: "드디어 시작하는 블로그"
 excerpt_separator: "<!--more-->"
 categories:
   - blog
@@ -8,9 +8,6 @@ tags:
   - github.io
   - blog
 date: 2021-08-28T11:55:50
----
-### 드디어 시작하는 블로그
-
 ---
 
 개발자로써 자사 서비스를 하는 IT기업에 이직을 희망하며, 항상 느끼던 게 있었다.

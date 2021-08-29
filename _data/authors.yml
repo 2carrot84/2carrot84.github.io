@@ -1,14 +1,14 @@
 # Sample Authors
 # Remove file or replace with your own
 
-Billy Rick:
-  name: Billy Rick
+2carrot84:
+  name: 2carrot84
   picture: /images/bio-photo-2.jpg
-  twitter: "@billyrick"
+#  twitter: "@billyrick"
   links:
-    - title: Twitter
-      url: https://twitter.com/billyrick
-      icon: fab fa-twitter-square
+    - title: GitHub
+      url: https://github.com/2carrot84
+      icon: fab fa-github-square
 
 Cornelius Fiddlebone:
   name: Cornelius Fiddlebone

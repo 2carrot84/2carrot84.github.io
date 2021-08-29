@@ -1,5 +1,5 @@
 ---
-title: "드디어 첫 블로그를 만들다"
+title: "Open Source 프로젝트에 처음 PR을 올려보다."
 excerpt_separator: "<!--more-->"
 categories:
   - blog
@@ -10,9 +10,6 @@ tags:
   - P0WEX
   - Gesko
 date: 2021-08-29T01:46:50
----
-### Open Source 프로젝트에 처음 PR을 올려보다.😅
-
 ---
 
 오늘 jekyll을 이용한 github.io 블로그를 만들며 많은 시간을 보냈다.
@@ -25,4 +22,4 @@ date: 2021-08-29T01:46:50
 
 > 8/31 01:46 : 이 글을 작성하던 시점에 내 첫 PR이 Merge가 되었다. 😁  Thanks, [P0WEX](https://github.com/P0WEX).
 >
-![contributor](/docs/images/contributors.png)
+![contributor](/images/contributors.png)

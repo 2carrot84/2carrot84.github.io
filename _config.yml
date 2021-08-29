@@ -16,12 +16,12 @@
 theme: jekyll-theme-so-simple
 # remote_theme: mmistakes/so-simple-theme
 skin: "/assets/css/skins/dark.css"
-locale: ko-KR
+locale: en-US
 title: "2carrot's Blog"
 description: "개발을 하면서 여러가지를 기록하는 공간"
 baseurl: # the subpath of your site, e.g. "/blog"
 url: https://2carrot.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: /docs/images/carrot.png # path of site logo, e.g. "/images/logo.png"
+logo: /images/carrot.png # path of site logo, e.g. "/images/logo.png"
 date_format: "%B %-d, %Y"
 read_time: true # reading time estimates, e.g. true
 words_per_minute: # 200
@@ -92,7 +92,7 @@ defaults:
 # Site Author
 author:
   name: 2carrot84
-  picture: /docs/images/avatar.jpeg
+  picture: /images/avatar.jpeg
   email: 2carrot84@gmail.com
   twitter:
   links:
@@ -105,3 +105,6 @@ footer_links:
   - title: Feed
     url: atom.xml
     icon: fas fa-rss-square
+  - title: GitHub
+    url: https://github.com/2carrot84
+    icon: fab fa-github-square
