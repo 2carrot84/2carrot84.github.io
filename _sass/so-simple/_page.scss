@@ -232,6 +232,8 @@
   }
 
   .page-header {
+    color: #00adb5;
+
     @include breakpoint($large) {
       grid-column: 1 / -1;
       clear: both; // needed for floated layout
