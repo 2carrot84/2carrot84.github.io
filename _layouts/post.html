@@ -25,10 +25,17 @@ layout: default
         <div class="e-content">
           {{ content }}
         </div>
-
         {% if page.share %}
           {% include social-share.html %}
         {% endif %}
+
+        <script src="https://utteranc.es/client.js"
+                repo="2carrot84/2carrot84.github.io"
+                issue-term="pathname"
+                theme="github-dark"
+                crossorigin="anonymous"
+                async>
+        </script>
 
         {% if site.disqus.shortname %}
           {% include disqus-comments.html %}
