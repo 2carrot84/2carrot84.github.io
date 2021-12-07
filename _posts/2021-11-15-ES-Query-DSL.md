@@ -54,8 +54,9 @@ ES 데이터 조회 방식은 2가지 방식(search API, URI search)이 있지�
 
 #### match
 > match : text, 숫자, 날짜 허용  
-> 표준 SQL 의 like '%{keyword}%' 와 유사하나, 검색 keyword 를 analyze 함  
-> "operator":<operator> 를 사용하여, 결과를 다르게 만들 수 있음
+> 표준 SQL 의 like '%{keyword}%' 와 유사하나, 검색 keyword 를 analyze 함
+> 
+> "operator":<operator> 를 사용하여, 결과를 다르게 만들 수 있음(AND or OR)
 >   
 > address 에 `mill lane` 이 포함된 document 가 아니라, `mill` 또는 `lane` 이 포함된 document 가 결과로 반환   
 > ```json
@@ -66,8 +67,9 @@ ES 데이터 조회 방식은 2가지 방식(search API, URI search)이 있지�
 > ```
 
 #### match_phrase
-> match_phrase : token 과 일치하는 keyword 가 모두 존재하고, 순서도 순차적으로 동일한 document 만 검색  
-> 표준 SQL 의 like '%{keyword}%' 과 일치
+> match_phrase : token 과 일치하는 keyword 가 모두 존재하고, 순서도 순차적으로 동일한 document 만 검색
+> 표준 SQL 의 like '%{keyword}%' 과 일치  
+> 
 > slop 이라는 옵션을 이용해 slop에 지정된 값 만큼 단어 사이에 다른 "검색어"(=단어)가 끼어드는 것을 허용
 > 
 > address 에 `mill lane` 이 포함된 document 만 결과로 반환
@@ -165,7 +167,8 @@ ES 데이터 조회 방식은 2가지 방식(search API, URI search)이 있지�
 > term : 역색인에 명시된 토큰 중 정확한 키워드가 포함된 document 를 조회
 > - "Quick Foxes" 라는 문자열이 있을 때 text 타입은 [quick, foxes]으로 역색인 됩니다.
 > - String 필드는 Text 타입(e-mail 본문 같은 전문(full-text)) 또는 keyword 타입(전화번호, 우편번호)
-> - Text 타입(match 검색)은 ES 분석기를 통해 역색인이 되는 반면, keyword 타입(term 검색)은 역색인이 되지 않음
+> - Text 타입(match 검색)은 ES 분석기를 통해 역색인이 되는 반면, keyword 타입(term 검색)은 역색인이 되지 않음  
+> 
 > ```json
 > GET /bank/_search
 > {
@@ -302,7 +305,7 @@ GET /bank/_search
 }
 ```
 
-> state 의 평균 계정 잔액 집
+> state 의 평균 계정 잔액 집계
 ```json
 GET /bank/_search
 {
@@ -324,7 +327,6 @@ GET /bank/_search
 }
 ```
 > 연령대를(20대, 30대, 40대)를 기준으로, 성별을 그룹화 하여, 연령대, 성별 별 평균 계정 잔액을 구하는 방법
-#### 응답
 ```json
 GET /bank/_search
 {
