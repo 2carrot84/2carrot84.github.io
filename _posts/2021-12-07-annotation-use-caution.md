@@ -56,7 +56,7 @@ JEE5 (Java Platform, Enterprise Edition 5) 부터 새로 추가된 요소로 기
 
 #### @Autowired 보다 생성자 주입을 권장하는 이유
 
-1. 순환 참조를 방지할 수 있다.
+- 순환 참조를 방지할 수 있다.
 
  개발을 하다보면 여러 컴포넌트 간에 의존성이 생긴다. 그중에서 A가 B를 참조하고, B가 다시 A를 참조하는 순한 참조가 발생할 수 있다. 
 이런 경우 @Autowired 를 사용할 경우 컴파일시나 어플리케이션 구동 시 오류없이 정상적으로 구동된다. (해당 메소드 호출시 StackOverflowError 발생)
@@ -76,15 +76,15 @@ The dependencies of some of the beans in the application context form a cycle:
 
 [자세한 설명](https://madplay.github.io/post/why-constructor-injection-is-better-than-field-injection)
 
-2. 테스트에 용이하다
+- 테스트에 용이하다
 
 DI의 핵심은 관리되는 클래스가 DI 컨테이너에 의존성이 없어야 한다는 것이다. 즉, **독립적으로 인스턴스화가 가능한 POJO(Plain Old Java Ojbect)** 여야 한다는 것이다. DI 컨테이너를 사용하지 않고서도 단위 테스트에서 인스턴스화할 수 있어야 한다.
 
-3. 코드 속에 나쁜 냄새를 없앤다.
+- 코드 속에 나쁜 냄새를 없앤다.
 
 생성자 주입을 사용하게 되는 경우 생성자의 인자가 많아짐에 따라 복잡한 코드가 됨을 쉽게 알 수 있고 리팩토링하여 역할을 분리하는 등과 같은 코드의 품질을 높이는 활동의 필요성을 더 쉽게 알 수 있다.
 
-4. 불변성 (Immutability)
+- 불변성 (Immutability)
 
 아쉽게도 필드 주입과 수정자 주입은 해당 필드를 final로 선언할 수 없다. 따라서 초기화 후에 빈 객체가 변경될 수 있지만 생성자 주입의 경우는 다르다. 필드를 final로 선언할 수 있다. 물론 런타임 환경에서 객체를 변경하는 경우가 있을까 싶지만 이로 인해 발생할 수 있는 오류를 사전에 미리 방지할 수 있다.
 
