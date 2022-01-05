@@ -7,6 +7,7 @@ tags:
   - IntelliJ
   - 단축키
   - shortcut key
+last_modified_at: 2022-01-05T22:20:00
 ---
 
 오늘은 현재 사용 중인 IDE인 [IntellJ](https://namu.wiki/w/IntelliJ%20IDEA) 의 단축키에 대해 포스팅을 해보려고 합니다.
@@ -58,10 +59,12 @@ tags:
 
 ### 그외 유용한 단축키 - 지속 업데이트 예정
 
-|단축키|설명|복사
-|---|---|---|
-|command(⌘) + shift(⇧) + \ |URL 검색|`copy`|
-|command(⌘) + option(⌥) + ← or →|Navigate back/forward|`copy`|
+| 단축키                             | 설명                    |복사
+|---------------------------------|-----------------------|---|
+| command(⌘) + shift(⇧) + \       | URL 검색                |`copy`|
+| command(⌘) + option(⌥) + ← or → | Navigate back/forward |`copy`|
+| command(⌘) + k                  | Commit project to VCS |`copy`|
+| command(⌘) + shift(⇧) + k       | Push commits          |`copy`|
 
 복사 기능 구현하고 싶어요..🤔😱
 
