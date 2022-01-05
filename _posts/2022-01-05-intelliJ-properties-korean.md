@@ -11,6 +11,8 @@ tags:
 
 (맨날 까먹어서..🤣)
 
+<!--more-->
+
 ###IntelliJ 메뉴 > Preferences > File Encodings > Transparent native-to-ascii conversion 체크
 
 ![propeties 한글 깨짐 설정](/images/posts/2022/01/propeties korean.png)
