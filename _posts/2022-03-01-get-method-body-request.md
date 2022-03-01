@@ -1,4 +1,4 @@
-                  ---
+---
 title: "HTTP GET 메소드와 Body Request"
 excerpt_separator: "<!--more-->"
 categories:
