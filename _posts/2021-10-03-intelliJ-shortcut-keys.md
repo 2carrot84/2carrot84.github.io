@@ -42,7 +42,6 @@ last_modified_at: 2022-01-05T22:20:00
 > 
 >   @RequestMapping("/main.do")
 >   public ModelAndView main() { 
->     ... 
 >   } 
 > }
 > ```
@@ -59,7 +58,7 @@ last_modified_at: 2022-01-05T22:20:00
 
 ### 그외 유용한 단축키 - 지속 업데이트 예정
 
-| 단축키                             | 설명                    |복사
+| 단축키                             | 설명                    |복사|
 |---------------------------------|-----------------------|---|
 | command(⌘) + shift(⇧) + \       | URL 검색                |`copy`|
 | command(⌘) + option(⌥) + ← or → | Navigate back/forward |`copy`|
