@@ -122,7 +122,7 @@ public class PerformanceTester {
 ```
 주석을 맨 위로 올리고 모든 파라미터를 한 줄에 놓았다.
 
-#### 메소드를 활요하여 불귝칙성을 정리하라
+#### 메소드를 활용하여 불규칙성을 정리하라
 ```java
 // 'Doug Adams' 처럼 간단하게 쓰인 partial_name 을 'Mr. Douglas Adams' 로 바꾼다.
 // 그게 가능하지 않으면, 이유와 함께 'error'가 채워진다.
@@ -146,7 +146,7 @@ assert(error == "more than one result");
 ```java
 CheckFullName("Doug Adams", "Mr. Douglas Adams", "");
 CheckFullName(" Jake Brown", "Mr. Jacob Brown III", "");
-CheckFullName("No Such Guy", "", "no match found"");
+CheckFullName("No Such Guy", "", "no match found");
 CheckFullName("John", "", "more than one result");
 ```
 우리는 코드가 미학적으로 더 개선되는 걸 의도했지만, 이런한 수정에는 다음과 같이 원래 의도하지 않았던 장점도 있다.
@@ -213,7 +213,7 @@ class FrontendServer {
 - 하나의 문단에서 다른 문단으로의 전진을 촉진시킨다.
 
 ```javascript
-# 사용자의 이메일 주소를 읽어 들여 시스템에 존재하는 사여ㅛㅇ자와 매치시킨다.
+# 사용자의 이메일 주소를 읽어 들여 시스템에 존재하는 사용자와 매치시킨다.
 # 그 다음 해당 사용자와 이미 친구인 사람들의 리스트를 나타낸다.    
 def suggest_new_friends(user, email_password);
     friends = user.friends();
@@ -227,7 +227,7 @@ def suggest_new_friends(user, email_password);
     display['suggested_friends'] = suggested_friends
     return render('suggested_friends.html', display)
 ```
-뚜렷하게 드러나지는 않지만, 이 함수는 구별되는 여러 단ㄱ를 거친다. 따라서 그러한 줄을 여러 문단으로 나누면 확실히 도움이 된다.
+뚜렷하게 드러나지는 않지만, 이 함수는 구별되는 여러 단계를 거친다. 따라서 그러한 줄을 여러 문단으로 나누면 확실히 도움이 된다.
 ```javascript
 def suggest_new_friends(user, email_password);
     # 사용자 친구들의 이메일 주소를 읽는다.
