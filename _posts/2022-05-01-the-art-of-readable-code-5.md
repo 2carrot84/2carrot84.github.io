@@ -75,7 +75,7 @@ int CountLines(string filename) { ... }
 
 가장 간단한 구현은 단순희 개행문자(\n)를 세는 것이다.
 ```javascript
-// 파일 안에 새 줄을 나타내는 바이트('\n')가 몇 개 있는지 샌다.
+// 파일 안에 새 줄을 나타내는 바이트('\n')가 몇 개 있는지 센다.
 int CountLines(string filename) { ... }
 ```
 
@@ -144,7 +144,7 @@ for (list<Product>::reverse_interator it = products.rbegin(); it != products.ren
 ```javascript
 Connect(10, false);
 ```
-이 함수 호출은 함수에 주어진 정수와 불리언값이 무엇을 뜻하는지 불분면하기 때문에 명확하지 않다.  
+이 함수 호출은 함수에 주어진 정수와 불리언값이 무엇을 뜻하는지 불분명하기 때문에 명확하지 않다.  
 파이썬 같은 언어는 이름과 함께 인수를 전달할 수 있다.
 ```javascript
 def Connect(timeout, use_encryption): ...
