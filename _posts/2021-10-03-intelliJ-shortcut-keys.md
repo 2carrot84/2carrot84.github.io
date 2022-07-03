@@ -64,6 +64,8 @@ last_modified_at: 2022-01-05T22:20:00
 | command(⌘) + option(⌥) + ← or → | Navigate back/forward |`copy`|
 | command(⌘) + k                  | Commit project to VCS |`copy`|
 | command(⌘) + shift(⇧) + k       | Push commits          |`copy`|
+| command(⌘) + e                  | 최근 파일 팝업 |`copy`|
+
 
 복사 기능 구현하고 싶어요..🤔😱
 
