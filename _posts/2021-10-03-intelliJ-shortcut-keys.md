@@ -62,6 +62,7 @@ last_modified_at: 2022-01-05T22:20:00
 |---------------------------------|-----------------------|---|
 | command(⌘) + shift(⇧) + \       | URL 검색                |`copy`|
 | command(⌘) + option(⌥) + ← or → | Navigate back/forward |`copy`|
+| command(⌘) + option(⌥) + n      | Inline Variable |`copy`|
 | command(⌘) + k                  | Commit project to VCS |`copy`|
 | command(⌘) + shift(⇧) + k       | Push commits          |`copy`|
 | command(⌘) + e                  | 최근 파일 팝업 |`copy`|
