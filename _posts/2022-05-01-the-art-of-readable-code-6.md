@@ -4,7 +4,7 @@ excerpt_separator: "<!--more-->"
 categories:
   - book
 tags:
-  - 클린코드
+  - 클린코드, clean code, 읽기 좋은 코드, 좋은코드
 ---
 
 지난번 포스팅에 이어, '읽기 좋은 코드가 좋은 코드다' 책의 PART TWO '루프와 논리를 단순화하기' 7장 '읽기 쉽게 흐름제어 만들기' 에 대한 내용을 정리해 봅니다.

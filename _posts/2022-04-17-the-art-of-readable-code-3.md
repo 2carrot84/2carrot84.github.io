@@ -4,7 +4,7 @@ excerpt_separator: "<!--more-->"
 categories:
   - book
 tags:
-  - 클린코드
+  - 클린코드, clean code, 읽기 좋은 코드, 좋은코드
 ---
 
 지난번 포스팅에 이어, '읽기 좋은 코드가 좋은 코드다' 책의 4장 '미학' 에 대한 내용을 정리해 봅니다.

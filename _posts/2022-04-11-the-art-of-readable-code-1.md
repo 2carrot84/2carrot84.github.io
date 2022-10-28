@@ -4,7 +4,7 @@ excerpt_separator: "<!--more-->"
 categories:
   - book
 tags:
-  - 클린코드
+  - 클린코드, clean code, 읽기 좋은 코드, 좋은코드
 date: 2022-04-11T21:27
 ---
 
