@@ -53,7 +53,7 @@ export default {
    > Item -> MyItem
 
 2. ESLint 설정 변경 (lintOnSave:false)
-   > vue.config.js 파일에 아래와 같은 설정값을 추가
+   > vue.config.js 파일에 아래와 같은 설정값을 추가 (서버 재기동 필요!)
 ```javascript
 const { defineConfig } = require('@vue/cli-service')
 module.exports = defineConfig({
