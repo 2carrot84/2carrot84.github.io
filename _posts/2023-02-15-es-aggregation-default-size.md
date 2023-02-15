@@ -45,6 +45,8 @@ tags:
 
 `aggregations > terms > size 가 10으로 고정이 되어, aggregation 결과가 10개만 리턴`되고 있었습니다.
 
+API에 조회하는 모듈의 수가 10개를 넘어가자 10개 이후의 모듈은 aggregation 결과가 조회되지 않는 것이었습니다.
+
 ```json
 "aggregations":{
       "module_id_aggs":{
