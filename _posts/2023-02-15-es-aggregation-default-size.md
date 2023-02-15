@@ -1,11 +1,12 @@
 ---
-title: "Elastic Search Aggregation 사용시 default size"
+title: "[ES] Aggregation 사용시 default size"
 excerpt_separator: "<!--more-->"
 categories:
 - development
 
 tags:
 - ES
+- Elastic Search
 - Aggregation
 - default
 - size

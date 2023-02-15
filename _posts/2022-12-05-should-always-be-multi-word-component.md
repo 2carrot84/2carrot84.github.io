@@ -1,5 +1,5 @@
 ---
-title: "Component name should always be multi-word 에러 조치 방법"
+title: "[Vue] Component name should always be multi-word 에러 조치 방법"
 excerpt_separator: "<!--more-->"
 categories:
 - development
