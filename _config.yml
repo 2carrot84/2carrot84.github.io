@@ -21,7 +21,7 @@ title: "2carrot's Blog"
 description: "개발을 하면서 여러가지를 기록하는 공간"
 baseurl: # the subpath of your site, e.g. "/blog"
 url: https://2carrot84.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-logo: /images/carrot.png # path of site logo, e.g. "/images/logo.png"
+logo: /images/happy-carrot.gif # path of site logo, e.g. "/images/logo.png"
 repository: 2carrot84/2carrot84.github.io # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 date_format: "%B %-d, %Y"
 future: true
