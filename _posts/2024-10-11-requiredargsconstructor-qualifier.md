@@ -150,6 +150,53 @@ public class XXService {
 }
 ```
 
+### 해결 방법 2
+
+저는 해당 포스팅을 무분별한 lombok 사용을 지양하고, 사용하려면 자세히 파악하고 사용하자는 취지로 작성을 하였습니다.
+
+하지만, 최근 면접 과정 중 면접관님이 해당 포스팅의 해결방법외 다른 해결방법은 없냐는 질문을 하셨고 보시는 분들이 `무조건 저렇게 해결해야 한다고 생각할 수도 있겠다`는 생각에 추가 해결방법도 공유 드립니다.
+
+```java
+@Component
+@RequiredArgsConstructor
+public class TestClass {
+	@Qualifier("target2")
+	private final TargetInterface target;
+
+	public void test() {
+		target.printMsg();
+	}
+}
+```
+
+위와 같이 lombok 을 사용하여도 아래와 같이 컴파일되는걸 확인할 수 있었습니다.
+```java
+@Component
+public class TestClass {
+    @Qualifier("target2")
+    private final TargetInterface target;
+
+    public void test() {
+        this.target.printMsg();
+    }
+
+    @Generated
+    public TestClass(@Qualifier("target2") final TargetInterface target) {
+        this.target = target;
+    }
+}
+```
+방법은 바로 프로젝트 루트에 `lombok.config` 파일을 생성 후 아래와 같이 입력해주면 됩니다.
+```yaml
+lombok.copyableAnnotations += org.springframework.beans.factory.annotation.Qualifier
+```
+
+심지어 참고 자료의 링크에 있었던 내용이라 더 충격적이었습니다. 추가로 lombok.config 관련 참고자료 링크도 추가 하였으니 한번씩 보시면 좋을 것 같습니다.
+
+블로그 자체를 제가 기억하고 싶은걸 찾아보기 쉽게 기록하는 목적이 제일 컸으나, 혹시나 제 블로그를 보게되는 다른 분들을 위해 조금 더 면밀히 내용에 신경써야 겠다는 교훈을 얻었습니다.
+
+좋은 면접관님을 만나서 좋은 경험을 했지만, 면접 준비 과정 중 큰 착각을 해서 너무 아쉬움이 남는 면접이였습니다. 😭
+
 ### 마무리
 위 이슈를 겪고 해결하면서 습관처럼 사용하는 코드들에 대해서도 제가 생각하지 못한 문제를 야기시킬 수 있다는 생각을 늘 품고 의심해봐야 한다는 점을 잊지 말아야 겠다고 생각했습니다.
 
@@ -159,4 +206,6 @@ public class XXService {
 
 ### 참고자료🤣
 [@Qualifier와 @Primary 어노테이션 사용법](https://bestinu.tistory.com/58)  
-[@RequiredArgsConstructor과 @Qualifier 같이 사용 시 이슈 해결법](https://www.podo-dev.com/blogs/224)
+[@RequiredArgsConstructor과 @Qualifier 같이 사용 시 이슈 해결법](https://www.podo-dev.com/blogs/224)  
+[실무에서 Lombok 사용법 - lombok.config](https://cheese10yun.github.io/lombok-config/#google_vignette)  
+[Lombok Configuration system](https://projectlombok.org/features/configuration)
