@@ -1,5 +1,5 @@
 ---
-title: "ThreadPoolTaskExecutor 에 대한 짧은 지식"
+title: "[Spring] ThreadPoolTaskExecutor 에 대한 짧은 지식"
 excerpt_separator: "<!--more-->"
 categories:
 - development
@@ -36,7 +36,7 @@ tags:
 	}
 ```
 
-- java.util.concurrent.Executor 을 구현한 클래스
+- java.util.concurrent.Executor 을 구현한 클래스이며, java.util.concurrent.ThreadPoolExecutor 를 멤버변수로 갖는 클래스이다.
 - CorePoolSize : 스레드풀에 속할 기본 스레드 갯수 default. 1
 - QueueCapacity : 이벤트 대기 큐 크기 default. Integer.MAX_VALUE
 - MaxPoolSize : 최대 스레드 갯수 default. Integer.MAX_VALUE
