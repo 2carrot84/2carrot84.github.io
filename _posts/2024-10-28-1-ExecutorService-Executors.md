@@ -47,10 +47,20 @@ public interface Callable<V> {
 }
 ```
 
-- 비동기 작업을 지원하는 submit 메소드를 제공
+- ExecutorService 에서는 비동기 작업을 지원하는 submit 메소드를 제공
   - Future 를 반환
-    - Future 의 결과를 받기 위해 get 함수를 호출할 수 있으나, Blocking 으로 처리되어 비동기의 이점을 얻기 어렵다.
+    - Future 의 결과를 받기 위해 get 함수를 호출할 수 있으나, blocking 으로 처리되어 비동기의 이점을 얻기 어렵다.
+```java
+public interface ExecutorService extends Executor {
+  ...
+  <T> Future<T> submit(Callable<T> task);
 
+  <T> Future<T> submit(Runnable task, T result);
+
+  Future<?> submit(Runnable task);
+  ...
+}
+```
 ```java
 public interface Future<V> {
     ...
@@ -65,6 +75,7 @@ public interface Future<V> {
 ```
 
 - 대표적인 구현체로 java.util.concurrent.ThreadPoolExecutor 가 존재한다.
+- 사용 후 반드시 shutdown() 메소드를 호출해야 한다.
 
 간단한 예재 코드는 아래와 같이 만들어 보았습니다.
 
