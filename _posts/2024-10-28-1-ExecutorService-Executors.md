@@ -50,6 +50,7 @@ public interface Callable<V> {
 - ExecutorService 에서는 비동기 작업을 지원하는 submit 메소드를 제공
   - Future 를 반환
     - Future 의 결과를 받기 위해 get 함수를 호출할 수 있으나, blocking 으로 처리되어 비동기의 이점을 얻기 어렵다.
+
 ```java
 public interface ExecutorService extends Executor {
   ...
